@@ -1,0 +1,4 @@
+EL primer clase en ejecutarse es el CapituloLibro, porque esa contiene todo el resto de clases.
+
+
+Problema1 Sin herencia es solo para entender como fuera mejor diseñado estrictamente este problema
