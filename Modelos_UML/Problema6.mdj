@@ -1524,7 +1524,7 @@
 							"top": 1528,
 							"width": 161,
 							"height": 116,
-							"text": "De nuevo el ejecutor instancia cualquier tipo de cuenta para cual sea la cantidad de clientes"
+							"text": "De nuevo el ejecutor instancia cualquier tipo de cuenta para cual sea la cantidad de clientes con multiplicidad:\nLado A: (0,1) \nLado B: (1,*)"
 						}
 					]
 				}
@@ -2212,7 +2212,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -2526,7 +2526,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -2742,7 +2742,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -2992,7 +2992,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -3192,7 +3192,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -3669,7 +3669,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -3983,7 +3983,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -4199,7 +4199,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -4449,7 +4449,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -4649,7 +4649,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",

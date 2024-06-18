@@ -1808,17 +1808,18 @@
 									"model": {
 										"$ref": "AAAAAAGQK/VimmnvOi8="
 									},
-									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1320,
+									"left": 1299,
 									"top": 486,
+									"width": 43.00537109375,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
 										"$ref": "AAAAAAGQK/WxvHAeIHk="
 									},
-									"edgePosition": 1
+									"edgePosition": 1,
+									"text": "+es un "
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1829,17 +1830,18 @@
 									"model": {
 										"$ref": "AAAAAAGQK/VimmnvOi8="
 									},
-									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1319,
+									"left": 1183,
 									"top": 501,
+									"width": 273.90771484375,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
 										"$ref": "AAAAAAGQK/WxvHAeIHk="
 									},
-									"edgePosition": 1
+									"edgePosition": 1,
+									"text": "«Todo empleado tiene un jefe (excepto el jefe)»"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -2091,6 +2093,19 @@
 							"width": 241,
 							"height": 113,
 							"text": "El ejecutor instancia todo tipo de empleados, asi que no agrego lineas-relacionales de agregacion en cada empleado para el ejecutor porque seria muy difuso y c se volveria mas confuso el diagrama"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGQLDXHhOn9Sws=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1040,
+							"top": 344,
+							"width": 217,
+							"height": 92,
+							"text": "Todo empleado tiene un Gerente (jefe). Flecha -> . \nPero el constructor de Gerente no tiene otro jefe"
 						}
 					]
 				}
@@ -2681,12 +2696,14 @@
 							"_parent": {
 								"$ref": "AAAAAAGQK/VimGngwcc="
 							},
+							"name": "es un ",
 							"source": {
 								"$ref": "AAAAAAGQK/VimGngwcc="
 							},
 							"target": {
 								"$ref": "AAAAAAGQK/Vilmm2j38="
-							}
+							},
+							"stereotype": "Todo empleado tiene un jefe (excepto el jefe)"
 						}
 					],
 					"attributes": [
@@ -2879,7 +2896,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -3177,7 +3194,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -3395,7 +3412,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -3613,7 +3630,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -3847,7 +3864,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -4065,7 +4082,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -4636,7 +4653,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -4934,7 +4951,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -5152,7 +5169,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -5370,7 +5387,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -5604,7 +5621,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
@@ -5822,7 +5839,7 @@
 											"font": "Arial;13;0",
 											"width": 114.13720703125,
 											"height": 13,
-											"text": "(from JavaReverse)"
+											"text": "(from Week9-10)"
 										},
 										{
 											"_type": "LabelView",
