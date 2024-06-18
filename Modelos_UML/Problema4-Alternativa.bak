@@ -198,7 +198,7 @@
 											"top": 452,
 											"width": 487.37939453125,
 											"height": 13,
-											"text": "«constructor»+Empleado(nombre: String, direccion: String, dni: String)",
+											"text": "«constructor»+Empleado(nombre: String, direccion: String, dni: String, jefe: Gerente)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1656,6 +1656,67 @@
 									"edgePosition": 2
 								},
 								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGQK/WxvHAZR7Q=",
+									"_parent": {
+										"$ref": "AAAAAAGQK/Wxu3ASNsY="
+									},
+									"model": {
+										"$ref": "AAAAAAGQK/VinGn1M2M="
+									},
+									"font": "Arial;13;0",
+									"left": 1615,
+									"top": 477,
+									"width": 25.2890625,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGQK/Wxu3ASNsY="
+									},
+									"text": "-jefe"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGQK/WxvHAa578=",
+									"_parent": {
+										"$ref": "AAAAAAGQK/Wxu3ASNsY="
+									},
+									"model": {
+										"$ref": "AAAAAAGQK/VinGn1M2M="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1625,
+									"top": 463,
+									"height": 13,
+									"alpha": -0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAGQK/Wxu3ASNsY="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGQK/WxvHAbYzw=",
+									"_parent": {
+										"$ref": "AAAAAAGQK/Wxu3ASNsY="
+									},
+									"model": {
+										"$ref": "AAAAAAGQK/VinGn1M2M="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1629,
+									"top": 505,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAGQK/Wxu3ASNsY="
+									}
+								},
+								{
 									"_type": "UMLQualifierCompartmentView",
 									"_id": "AAAAAAGQK/WxvHAcZyw=",
 									"_parent": {
@@ -1663,6 +1724,20 @@
 									},
 									"model": {
 										"$ref": "AAAAAAGQK/VinGn0D6g="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAGQK/WxvHAdBzo=",
+									"_parent": {
+										"$ref": "AAAAAAGQK/Wxu3ASNsY="
+									},
+									"model": {
+										"$ref": "AAAAAAGQK/VinGn1M2M="
 									},
 									"visible": false,
 									"font": "Arial;13;0",
@@ -1698,8 +1773,20 @@
 							"tailMultiplicityLabel": {
 								"$ref": "AAAAAAGQK/Wxu3AYs94="
 							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAGQK/WxvHAZR7Q="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAGQK/WxvHAa578="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAGQK/WxvHAbYzw="
+							},
 							"tailQualifiersCompartment": {
 								"$ref": "AAAAAAGQK/WxvHAcZyw="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAGQK/WxvHAdBzo="
 							}
 						},
 						{
@@ -1743,7 +1830,6 @@
 									"model": {
 										"$ref": "AAAAAAGQK/VimmnvOi8="
 									},
-									"visible": "",
 									"font": "Arial;13;0",
 									"left": 1183,
 									"top": 501,
@@ -2007,6 +2093,19 @@
 							"width": 241,
 							"height": 113,
 							"text": "El ejecutor instancia todo tipo de empleados, asi que no agrego lineas-relacionales de agregacion en cada empleado para el ejecutor porque seria muy difuso y c se volveria mas confuso el diagrama"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGQLDXHhOn9Sws=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1040,
+							"top": 344,
+							"width": 217,
+							"height": 92,
+							"text": "Todo empleado tiene un Gerente (jefe). Flecha -> . \nPero el constructor de Gerente no tiene otro jefe"
 						}
 					]
 				}
@@ -2045,6 +2144,18 @@
 								},
 								"visibility": "package",
 								"navigable": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGQK/VinGn1M2M=",
+								"_parent": {
+									"$ref": "AAAAAAGQK/VinGnzDJw="
+								},
+								"name": "jefe",
+								"reference": {
+									"$ref": "AAAAAAGQK/VimGngwcc="
+								},
+								"visibility": "private"
 							}
 						}
 					],
@@ -2116,6 +2227,17 @@
 									},
 									"name": "dni",
 									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGQK/Vil2m7Sss=",
+									"_parent": {
+										"$ref": "AAAAAAGQK/Vil2m3mb8="
+									},
+									"name": "jefe",
+									"type": {
+										"$ref": "AAAAAAGQK/VimGngwcc="
+									}
 								}
 							]
 						},
@@ -2581,7 +2703,7 @@
 							"target": {
 								"$ref": "AAAAAAGQK/Vilmm2j38="
 							},
-							"stereotype": ""
+							"stereotype": "Todo empleado tiene un jefe (excepto el jefe)"
 						}
 					],
 					"attributes": [
@@ -4393,18 +4515,17 @@
 									"model": {
 										"$ref": "AAAAAAGQK/VimmnvOi8="
 									},
+									"visible": false,
 									"font": "Arial;13;0",
-									"left": 116,
+									"left": 134,
 									"top": 144,
-									"width": 37.66064453125,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
 										"$ref": "AAAAAAGQK/Vi+GqS3zQ="
 									},
-									"edgePosition": 1,
-									"text": "+es un "
+									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -4415,18 +4536,17 @@
 									"model": {
 										"$ref": "AAAAAAGQK/VimmnvOi8="
 									},
+									"visible": null,
 									"font": "Arial;13;0",
-									"left": 2,
+									"left": 126,
 									"top": 157,
-									"width": 248.50439453125,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
 										"$ref": "AAAAAAGQK/Vi+GqS3zQ="
 									},
-									"edgePosition": 1,
-									"text": "«Todo empleado tiene un jefe (excepto el jefe)»"
+									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -5988,6 +6108,67 @@
 									"edgePosition": 2
 								},
 								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGQK/VjaGvv4uo=",
+									"_parent": {
+										"$ref": "AAAAAAGQK/VjZ2voxJQ="
+									},
+									"model": {
+										"$ref": "AAAAAAGQK/VinGn1M2M="
+									},
+									"font": "Arial;13;0",
+									"left": 510,
+									"top": 52,
+									"width": 25.2890625,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGQK/VjZ2voxJQ="
+									},
+									"text": "-jefe"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGQK/VjaGvwlgY=",
+									"_parent": {
+										"$ref": "AAAAAAGQK/VjZ2voxJQ="
+									},
+									"model": {
+										"$ref": "AAAAAAGQK/VinGn1M2M="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 535,
+									"top": 57,
+									"height": 13,
+									"alpha": -0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAGQK/VjZ2voxJQ="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGQK/VjaGvxykI=",
+									"_parent": {
+										"$ref": "AAAAAAGQK/VjZ2voxJQ="
+									},
+									"model": {
+										"$ref": "AAAAAAGQK/VinGn1M2M="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 496,
+									"top": 43,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAGQK/VjZ2voxJQ="
+									}
+								},
+								{
 									"_type": "UMLQualifierCompartmentView",
 									"_id": "AAAAAAGQK/VjaGvyGWc=",
 									"_parent": {
@@ -5995,6 +6176,20 @@
 									},
 									"model": {
 										"$ref": "AAAAAAGQK/VinGn0D6g="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAGQK/VjaGvz8hU=",
+									"_parent": {
+										"$ref": "AAAAAAGQK/VjZ2voxJQ="
+									},
+									"model": {
+										"$ref": "AAAAAAGQK/VinGn1M2M="
 									},
 									"visible": false,
 									"font": "Arial;13;0",
@@ -6030,8 +6225,20 @@
 							"tailMultiplicityLabel": {
 								"$ref": "AAAAAAGQK/VjaGvu/eg="
 							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAGQK/VjaGvv4uo="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAGQK/VjaGvwlgY="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAGQK/VjaGvxykI="
+							},
 							"tailQualifiersCompartment": {
 								"$ref": "AAAAAAGQK/VjaGvyGWc="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAGQK/VjaGvz8hU="
 							}
 						},
 						{
@@ -6335,18 +6542,17 @@
 									"model": {
 										"$ref": "AAAAAAGQK/VimmnvOi8="
 									},
+									"visible": false,
 									"font": "Arial;13;0",
-									"left": 420,
+									"left": 438,
 									"top": 68,
-									"width": 37.66064453125,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
 										"$ref": "AAAAAAGQK/VjamwAKpY="
 									},
-									"edgePosition": 1,
-									"text": "+es un "
+									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -6357,18 +6563,17 @@
 									"model": {
 										"$ref": "AAAAAAGQK/VimmnvOi8="
 									},
+									"visible": null,
 									"font": "Arial;13;0",
-									"left": 309,
+									"left": 433,
 									"top": 82,
-									"width": 248.50439453125,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
 										"$ref": "AAAAAAGQK/VjamwAKpY="
 									},
-									"edgePosition": 1,
-									"text": "«Todo empleado tiene un jefe (excepto el jefe)»"
+									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
