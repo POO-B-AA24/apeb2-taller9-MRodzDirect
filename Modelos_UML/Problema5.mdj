@@ -283,7 +283,7 @@
 											"top": 322,
 											"width": 456.3203125,
 											"height": 13,
-											"text": "+calcularPrecio(): double",
+											"text": "+calcularPrecio(): void",
 											"horizontalAlignment": 0
 										}
 									],
@@ -489,7 +489,7 @@
 											"top": 686,
 											"width": 498.21484375,
 											"height": 13,
-											"text": "+calcularPrecio(): double",
+											"text": "+calcularPrecio(): void",
 											"horizontalAlignment": 0
 										}
 									],
@@ -793,7 +793,7 @@
 											"top": 686,
 											"width": 511.24658203125,
 											"height": 13,
-											"text": "+calcularPrecio(): double",
+											"text": "+calcularPrecio(): void",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1099,7 +1099,7 @@
 											"top": 686,
 											"width": 493.9111328125,
 											"height": 13,
-											"text": "+calcularPrecio(): double",
+											"text": "+calcularPrecio(): void",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2548,7 +2548,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGQMZv4IoICgN0="
 									},
-									"type": "double",
+									"type": "void",
 									"direction": "return"
 								}
 							]
@@ -2631,7 +2631,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGQMZkjkXvPX5M="
 									},
-									"type": "double",
+									"type": "void",
 									"direction": "return"
 								}
 							]
@@ -2713,7 +2713,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGQMZxrOYNIugA="
 									},
-									"type": "double",
+									"type": "void",
 									"direction": "return"
 								}
 							]
@@ -2795,7 +2795,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGQMZyVi4OCEv4="
 									},
-									"type": "double",
+									"type": "void",
 									"direction": "return"
 								}
 							]
